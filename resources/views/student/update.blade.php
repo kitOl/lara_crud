@@ -81,6 +81,7 @@
 
                         <div class="form-group">
                             <button type="submit" class="btn btn-success" name="submit"> Submit </button>
+                            <a href="{{ route('student.index') }}" class="btn btn-danger"> Close <i class="fa fa-times-circle"></i></a>
                         </div>
                     </div>
                 </div>
