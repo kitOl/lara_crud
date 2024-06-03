@@ -1,4 +1,5 @@
 @extends('student/layout')
+@section('content')
 <div class="container mt-3">
     <div class="row">
         <div class="col-xl-8 p-4 m-auto shadow">
@@ -65,3 +66,4 @@
         </div>
     </div>
 </div>
+@endsection
