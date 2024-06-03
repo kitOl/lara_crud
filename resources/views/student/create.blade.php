@@ -2,6 +2,8 @@
     <body>
         <div class="container mt-3">
             <form action="{{ route('student.store') }}" method="post">
+                {{ csrf_field() }}
+
                 <div class="row">
                     <div class="col-xl-8 p-4 m-auto shadow">
                         <div class="card">
@@ -78,7 +80,6 @@
                                 <div class="form-group">
                                  <button type="submit" class="btn btn-success" name="submit"> Submit </button>
                                 </div>
-                                {{ csrf_field() }}
                             </div>
                         </div>
                     </div>
