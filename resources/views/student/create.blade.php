@@ -54,10 +54,10 @@
 
                                        <div class="form-group" {{ $errors->has('gender') ? 'has-error' : '' }}>
                                           <label > Gender </label>
-                                          <select name="gender" placeholder="Gender" class="form-control" value="{{ old('gender') }}">
+                                          <select name="gender" class="form-control">
                                              <option disabled selected> Select Gender </option>
-                                             <option value="male"> Male </option>
-                                             <option value="female"> Female </option>
+                                             <option value="male" {{ old('gender') == 'male' ? 'selected' : '' }}> Male </option>
+                                             <option value="female" {{ old('gender') == 'female' ? 'selected' : '' }}> Female </option>
                                           </select>
                                           {!! $errors->first('gender', '<small class="text-danger">:message</small>') !!}
                                       </div>
@@ -70,7 +70,7 @@
 
                                       <div class="form-group" {{ $errors->has('zipcode') ? 'has-error' : '' }}>
                                        <label > Zipcode </label>
-                                       <input type="number" name="zipcodee" placeholder="Zipcode" class="form-control" value="{{ old('zipcode') }}">
+                                       <input type="number" name="zipcode" placeholder="Zipcode" class="form-control" value="{{ old('zipcode') }}">
                                        {!! $errors->first('zipcode', '<small class="text-danger">:message</small>') !!}
                                     </div>
                                     </div>
